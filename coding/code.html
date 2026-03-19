@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Reference - Interactive Programming Guide</title>
+    <link rel="stylesheet" href="code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Coding Reference</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#languages" class="nav-link">Languages</a>
+                <a href="#concepts" class="nav-link">Concepts</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#source" class="nav-link">Source Code</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Master Programming</span>
+                    <br>One Language at a Time
+                </h1>
+                <p class="hero-subtitle">
+                    Interactive coding reference with examples, tutorials, and hands-on practice across multiple programming languages.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="8">0</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Concepts</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Code Examples</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('languages')">
+                        <i class="fas fa-language"></i> Explore Languages
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('concepts')">
+                        <i class="fas fa-brain"></i> Learn Concepts
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-display">
+                    <div class="code-block">
+                        <div class="code-line"><span class="keyword">function</span> <span class="function">helloWorld</span>() {</div>
+                        <div class="code-line indent">console.log(<span class="string">"Hello, Code Universe!"</span>);</div>
+                        <div class="code-line">}</div>
+                    </div>
+                    <div class="code-block">
+                        <div class="code-line"><span class="keyword">class</span> <span class="class">Programmer</span> {</div>
+                        <div class="code-line indent"><span class="keyword">constructor</span>(name) {</div>
+                        <div class="code-line indent2">this.name = name;</div>
+                        <div class="code-line indent">}</div>
+                        <div class="code-line">}</div>
+                    </div>
+                    <div class="code-block">
+                        <div class="code-line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> users</div>
+                        <div class="code-line"><span class="keyword">WHERE</span> active = <span class="number">1</span>;</div>
+                    </div>
+                    <div class="code-block">
+                        <div class="code-line">&lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</div>
+                        <div class="code-line indent">&lt;<span class="tag">h1</span>&gt;Hello World&lt;/<span class="tag">h1</span>&gt;</div>
+                        <div class="code-line">&lt;/<span class="tag">div</span>&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Programming Languages</h2>
+                <p class="section-subtitle">Master the fundamentals of popular programming languages with interactive examples</p>
+            </div>
+            <div class="languages-grid">
+                <div class="language-card" onclick="showLanguageModal('javascript')">
+                    <div class="language-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Web development, interactive applications, and modern frameworks</p>
+                    <div class="language-tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">Frontend</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('python')">
+                    <div class="language-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Data science, automation, web development, and AI/ML</p>
+                    <div class="language-tags">
+                        <span class="tag">Data Science</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('java')">
+                    <div class="language-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Enterprise applications, Android development, and large-scale systems</p>
+                    <div class="language-tags">
+                        <span class="tag">Enterprise</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">Scalable</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('cpp')">
+                    <div class="language-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>C++</h3>
+                    <p>System programming, game development, and high-performance applications</p>
+                    <div class="language-tags">
+                        <span class="tag">Systems</span>
+                        <span class="tag">Games</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('html')">
+                    <div class="language-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                    <p>Web markup, styling, and responsive design fundamentals</p>
+                    <div class="language-tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">Markup</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('sql')">
+                    <div class="language-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL</h3>
+                    <p>Database management, queries, and data manipulation</p>
+                    <div class="language-tags">
+                        <span class="tag">Database</span>
+                        <span class="tag">Queries</span>
+                        <span class="tag">Data</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('react')">
+                    <div class="language-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Modern frontend framework for building user interfaces</p>
+                    <div class="language-tags">
+                        <span class="tag">Frontend</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Components</span>
+                    </div>
+                </div>
+
+                <div class="language-card" onclick="showLanguageModal('nodejs')">
+                    <div class="language-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Server-side JavaScript for scalable backend applications</p>
+                    <div class="language-tags">
+                        <span class="tag">Backend</span>
+                        <span class="tag">Server</span>
+                        <span class="tag">APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concepts Section -->
+    <section id="concepts" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Programming Concepts</h2>
+                <p class="section-subtitle">Fundamental concepts that apply across all programming languages</p>
+            </div>
+            <div class="concepts-grid">
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Control Flow</h3>
+                    <p>Conditional statements, loops, and program flow control</p>
+                    <ul class="concept-list">
+                        <li>If/else statements</li>
+                        <li>For and while loops</li>
+                        <li>Switch/case statements</li>
+                        <li>Break and continue</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Data Structures</h3>
+                    <p>Organizing and storing data efficiently</p>
+                    <ul class="concept-list">
+                        <li>Arrays and Lists</li>
+                        <li>Objects and Dictionaries</li>
+                        <li>Stacks and Queues</li>
+                        <li>Trees and Graphs</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-function"></i>
+                    </div>
+                    <h3>Functions</h3>
+                    <p>Reusable code blocks and modular programming</p>
+                    <ul class="concept-list">
+                        <li>Function definition</li>
+                        <li>Parameters and arguments</li>
+                        <li>Return values</li>
+                        <li>Scope and closures</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <h3>Object-Oriented Programming</h3>
+                    <p>Classes, objects, inheritance, and encapsulation</p>
+                    <ul class="concept-list">
+                        <li>Classes and objects</li>
+                        <li>Inheritance</li>
+                        <li>Polymorphism</li>
+                        <li>Encapsulation</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Debugging</h3>
+                    <p>Finding and fixing errors in your code</p>
+                    <ul class="concept-list">
+                        <li>Reading error messages</li>
+                        <li>Using debuggers</li>
+                        <li>Logging and tracing</li>
+                        <li>Testing strategies</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fas fa-git-alt"></i>
+                    </div>
+                    <h3>Version Control</h3>
+                    <p>Managing code changes and collaboration</p>
+                    <ul class="concept-list">
+                        <li>Git basics</li>
+                        <li>Commits and branches</li>
+                        <li>Merging and conflicts</li>
+                        <li>Collaboration workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Development Tools</h2>
+                <p class="section-subtitle">Essential tools and environments for modern software development</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>VS Code</h3>
+                    <p>Free, open-source code editor with powerful extensions and debugging capabilities</p>
+                    <div class="tool-features">
+                        <span class="feature">Extensions</span>
+                        <span class="feature">Git Integration</span>
+                        <span class="feature">Debugging</span>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-git"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Distributed version control system for tracking changes and collaboration</p>
+                    <div class="tool-features">
+                        <span class="feature">Version Control</span>
+                        <span class="feature">Branching</span>
+                        <span class="feature">Collaboration</span>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Command Line</h3>
+                    <p>Powerful text-based interface for system administration and development tasks</p>
+                    <div class="tool-features">
+                        <span class="feature">Automation</span>
+                        <span class="feature">Scripting</span>
+                        <span class="feature">System Control</span>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Package Managers</h3>
+                    <p>Tools for managing dependencies and libraries (npm, pip, maven, etc.)</p>
+                    <div class="tool-features">
+                        <span class="feature">Dependencies</span>
+                        <span class="feature">Libraries</span>
+                        <span class="feature">Automation</span>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Tools</h3>
+                    <p>GUI and CLI tools for database management and querying</p>
+                    <div class="tool-features">
+                        <span class="feature">Querying</span>
+                        <span class="feature">Management</span>
+                        <span class="feature">Visualization</span>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS, Azure, Google Cloud for scalable application deployment</p>
+                    <div class="tool-features">
+                        <span class="feature">Deployment</span>
+                        <span class="feature">Scaling</span>
+                        <span class="feature">Services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Source Code Section -->
+    <section id="source" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Source Code Files</h2>
+                <p class="section-subtitle">View the actual source code that powers this website</p>
+            </div>
+            <div class="source-grid">
+                <div class="source-card" onclick="showCodeModal('html')">
+                    <div class="source-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML Structure</h3>
+                    <p>View the HTML markup and structure of this page</p>
+                    <span class="source-link">Click to view code</span>
+                </div>
+
+                <div class="source-card" onclick="showCodeModal('css')">
+                    <div class="source-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS Styling</h3>
+                    <p>Explore the CSS styles and responsive design</p>
+                    <span class="source-link">Click to view code</span>
+                </div>
+
+                <div class="source-card" onclick="showCodeModal('javascript')">
+                    <div class="source-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript Logic</h3>
+                    <p>See the interactive JavaScript functionality</p>
+                    <span class="source-link">Click to view code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Modal -->
+    <div id="languageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Language Details</h3>
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Code Modal -->
+    <div id="codeModal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h3 id="codeModalTitle">Source Code</h3>
+                <span class="modal-close" onclick="closeCodeModal()">&times;</span>
+            </div>
+            <div id="codeModalBody" class="modal-body">
+                <!-- Code content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Red Bull Racing - Max Verstappen & Sergio Perez</title>
+    <link rel="stylesheet" href="f1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="team-logo">
+                    <span class="logo-text">RED BULL</span>
+                    <span class="logo-subtext">RACING</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#drivers" class="nav-link">Drivers</a>
+                <a href="#car" class="nav-link">RB20</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-actions">
+                <button id="fan-zone-btn" class="btn btn-outline">Fan Zone</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (simplified per request) -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content" style="text-align:center;">
+            <h1 class="hero-title">F1</h1>
+            <p class="hero-description">Oracle Red Bull Racing</p>
+        </div>
+    </section>
+
+    <!-- Drivers Section -->
+    <section id="drivers" class="drivers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Drivers</h2>
+                <p class="section-subtitle">Champions on and off the track</p>
+            </div>
+            <div class="drivers-grid">
+                <div class="driver-card">
+                    <div class="driver-image">
+                        <div class="driver-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="driver-number">1</div>
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Max Verstappen</h3>
+                        <p class="driver-title">Three-Time World Champion</p>
+                        <div class="driver-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">54</span>
+                                <span class="stat-label">Race Wins</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">109</span>
+                                <span class="stat-label">Podiums</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">23</span>
+                                <span class="stat-label">Pole Positions</span>
+                            </div>
+                        </div>
+                        <p class="driver-bio">
+                            The dominant force in modern Formula 1. Max's exceptional talent, combined with Red Bull Racing's superior car, has redefined what it means to be a champion.
+                        </p>
+                        <div class="driver-achievements">
+                            <span class="achievement">2021 Champion</span>
+                            <span class="achievement">2022 Champion</span>
+                            <span class="achievement">2023 Champion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="driver-card">
+                    <div class="driver-image">
+                        <div class="driver-placeholder">
+                            <i class="fas fa-user-ninja"></i>
+                        </div>
+                        <div class="driver-number">11</div>
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Sergio Perez</h3>
+                        <p class="driver-title">Team Vice-Champion</p>
+                        <div class="driver-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">6</span>
+                                <span class="stat-label">Race Wins</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">39</span>
+                                <span class="stat-label">Podiums</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Pole Position</span>
+                            </div>
+                        </div>
+                        <p class="driver-bio">
+                            The experienced campaigner brings tactical brilliance and race craft to complement Max's raw speed. A key member of Red Bull's championship-winning team.
+                        </p>
+                        <div class="driver-achievements">
+                            <span class="achievement">2023 Vice-Champion</span>
+                            <span class="achievement">6 Race Wins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Section -->
+    <section id="car" class="car-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">RB20 - The Championship Winner</h2>
+                <p class="section-subtitle">Revolutionary design meets cutting-edge technology</p>
+            </div>
+                <div class="car-info">
+                    <h3>Technical Specifications</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Engine</span>
+                            <span class="spec-value">Honda RBPT</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power Unit</span>
+                            <span class="spec-value">1.6L V6 Turbo Hybrid</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Weight</span>
+                            <span class="spec-value">798kg (Min)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Top Speed</span>
+                            <span class="spec-value">370+ km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Aerodynamics</span>
+                            <span class="spec-value">Ground Effect Design</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Gears</span>
+                            <span class="spec-value">8-Speed Sequential</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Advanced ground effect aerodynamics</li>
+                            <li>Hybrid power unit with 1MW of electrical power</li>
+                            <li>Carbon fiber monocoque construction</li>
+                            <li>Advanced telemetry and data systems</li>
+                            <li>Precision fuel injection system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">2024 Season Results</h2>
+                <p class="section-subtitle">Dominating the competition</p>
+            </div>
+            <div class="results-container">
+                <div class="standings-card">
+                    <h3>Constructors' Championship</h3>
+                    <div class="position">
+                        <span class="position-number">1st</span>
+                        <span class="position-points">860 points</span>
+                    </div>
+                    <div class="championship-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-text">Champions!</span>
+                    </div>
+                </div>
+
+                <div class="race-results">
+                    <h3>Recent Race Results</h3>
+                    <div class="results-table">
+                        <div class="result-row header">
+                            <span>Round</span>
+                            <span>Circuit</span>
+                            <span>Verstappen</span>
+                            <span>Perez</span>
+                        </div>
+                        <div class="result-row">
+                            <span>24</span>
+                            <span>Abu Dhabi</span>
+                            <span class="position pos-1">1st</span>
+                            <span class="position pos-2">2nd</span>
+                        </div>
+                        <div class="result-row">
+                            <span>23</span>
+                            <span>Qatar</span>
+                            <span class="position pos-1">1st</span>
+                            <span class="position pos-3">3rd</span>
+                        </div>
+                        <div class="result-row">
+                            <span>22</span>
+                            <span>Las Vegas</span>
+                            <span class="position pos-1">1st</span>
+                            <span class="position pos-4">4th</span>
+                        </div>
+                        <div class="result-row">
+                            <span>21</span>
+                            <span>Brazil</span>
+                            <span class="position pos-2">2nd</span>
+                            <span class="position pos-1">1st</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest News</h2>
+                <p class="section-subtitle">Stay updated with the team</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="news-content">
+                        <h3>Red Bull Racing Clinches 2024 Constructors' Title</h3>
+                        <p class="news-date">December 8, 2024</p>
+                        <p class="news-excerpt">Oracle Red Bull Racing has secured their sixth Constructors' Championship title in Abu Dhabi, completing a dominant season...</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="news-content">
+                        <h3>RB20 Technical Analysis</h3>
+                        <p class="news-date">November 15, 2024</p>
+                        <p class="news-excerpt">Our engineering team breaks down the key technical innovations that made the RB20 the most successful car of the 2024 season...</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="news-content">
+                        <h3>Behind the Scenes: A Season in Review</h3>
+                        <p class="news-date">October 28, 2024</p>
+                        <p class="news-excerpt">Take a look at the incredible work done by our team throughout the 2024 season, from the factory to the track...</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Red Bull Racing</h2>
+                <p class="section-subtitle">A legacy of innovation and excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Oracle Red Bull Racing is a Formula One racing team and constructor, competing under the Austrian flag. The team is headquartered in Milton Keynes, United Kingdom, with a technology centre in Milton Keynes and a factory in Milton Keynes.
+                    </p>
+                    <p>
+                        Founded in 2005, Red Bull Racing has become one of the most successful teams in Formula 1 history, with six Constructors' Championships and multiple Drivers' Championships. Our success is built on a foundation of innovation, engineering excellence, and an unwavering commitment to pushing the boundaries of motorsport technology.
+                    </p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="stat-number">19</span>
+                            <span class="stat-label">Years in F1</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Championships</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-label">Race Victories</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="factory-visual">
+                        <i class="fas fa-industry"></i>
+                        <span>Milton Keynes Factory</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="team-logo">
+                        <span class="logo-text">RED BULL</span>
+                        <span class="logo-subtext">RACING</span>
+                    </div>
+                    <p>Powered by Oracle</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Team</h4>
+                        <a href="#drivers">Drivers</a>
+                        <a href="#car">Car</a>
+                        <a href="#about">About</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Racing</h4>
+                        <a href="#results">Results</a>
+                        <a href="#news">News</a>
+                        <a href="#">Schedule</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="#">Official Site</a>
+                        <a href="#">Social Media</a>
+                        <a href="#">Fan Zone</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oracle Red Bull Racing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="f1.js"></script>
+</body>
+</html>

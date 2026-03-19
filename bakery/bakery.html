@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery - Artisan Breads & Pastries</title>
+    <link rel="stylesheet" href="bakery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-birthday-cake"></i>
+                <div class="brand-text">
+                    <span class="brand-main">Sweet Delights</span>
+                    <span class="brand-sub">Bakery</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">
+                    <i class="fas fa-shopping-cart"></i> Order Online
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="hero-floats">
+                <div class="float-item item-1">🍞</div>
+                <div class="float-item item-2">🥖</div>
+                <div class="float-item item-3">🧁</div>
+                <div class="float-item item-4">🍪</div>
+                <div class="float-item item-5">🥧</div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-accent">Fresh Baked</span>
+                    <br>Every Morning
+                </h1>
+                <p class="hero-subtitle">
+                    Artisan breads, decadent pastries, and custom cakes made with love since 1995. Using traditional methods and the finest organic ingredients.
+                </p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <span>Organic Ingredients</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Fresh Daily</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <span>Made with Love</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Order Custom Cake</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="featured-product">
+                    <div class="product-showcase">
+                        <div class="product-image">
+                            <div class="product-emoji">🥖</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sourdough Baguette</h3>
+                            <p>Traditional French bread with crispy crust and soft interior</p>
+                            <div class="product-price">$4.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Fresh Menu</h2>
+                <p class="section-subtitle">Handcrafted with traditional techniques and premium ingredients</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="breads">Breads</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="cakes">Cakes</button>
+                <button class="category-btn" data-category="cookies">Cookies</button>
+                <button class="category-btn" data-category="specialty">Specialty</button>
+            </div>
+
+            <!-- Breads Menu -->
+            <div class="menu-items" id="breads-menu">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🍞</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Sourdough Loaf</h3>
+                        <p class="item-description">Traditional sourdough bread with a crispy crust and soft, tangy interior. Made with our 10-year-old starter.</p>
+                        <div class="item-details">
+                            <span class="item-price">$8.99</span>
+                            <span class="item-size">1.5 lb</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🥖</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">French Baguette</h3>
+                        <p class="item-description">Authentic French baguette with a golden crust and light, airy interior. Perfect for sandwiches or as a side.</p>
+                        <div class="item-details">
+                            <span class="item-price">$4.99</span>
+                            <span class="item-size">18"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🥨</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Pretzel Rolls</h3>
+                        <p class="item-description">Soft pretzel rolls with a chewy texture and lightly salted exterior. Great for burgers or sandwiches.</p>
+                        <div class="item-details">
+                            <span class="item-price">$6.99</span>
+                            <span class="item-size">6-pack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🥐</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Croissants</h3>
+                        <p class="item-description">Buttery, flaky croissants made with traditional French techniques. Available plain or with chocolate.</p>
+                        <div class="item-details">
+                            <span class="item-price">$3.99</span>
+                            <span class="item-size">Each</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🥧</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Apple Pie</h3>
+                        <p class="item-description">Classic apple pie with cinnamon-spiced filling and a flaky, buttery crust. Served warm with vanilla ice cream.</p>
+                        <div class="item-details">
+                            <span class="item-price">$24.99</span>
+                            <span class="item-size">9" pie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🍪</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Chocolate Chip Cookies</h3>
+                        <p class="item-description">Chewy chocolate chip cookies with premium chocolate chunks and a hint of sea salt. Baked fresh daily.</p>
+                        <div class="item-details">
+                            <span class="item-price">$2.99</span>
+                            <span class="item-size">Each</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastries Menu (Hidden by default) -->
+            <div class="menu-items" id="pastries-menu" style="display: none;">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🧁</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Cupcakes</h3>
+                        <p class="item-description">Moist cupcakes with various frostings: vanilla, chocolate, red velvet, and seasonal flavors.</p>
+                        <div class="item-details">
+                            <span class="item-price">$4.99</span>
+                            <span class="item-size">Each</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cakes Menu (Hidden by default) -->
+            <div class="menu-items" id="cakes-menu" style="display: none;">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <div class="item-emoji">🎂</div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Custom Wedding Cakes</h3>
+                        <p class="item-description">Beautiful custom wedding cakes with your choice of flavors, fillings, and decorations.</p>
+                        <div class="item-details">
+                            <span class="item-price">$199+</span>
+                            <span class="item-size">Serves 50+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>
+                        Founded in 1995 by master baker Maria Rodriguez, Sweet Delights Bakery has been serving our community with freshly baked goods for over 25 years. What started as a small family operation has grown into a beloved local institution.
+                    </p>
+                    <p>
+                        We believe that great bread and pastries are about more than just ingredients—they're about tradition, craftsmanship, and the joy of sharing something delicious with the people you care about.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years Baking</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Daily Items</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="bakery-scene">
+                        <div class="scene-element oven">🏪</div>
+                        <div class="scene-element flour">🌾</div>
+                        <div class="scene-element bread">🍞</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Creations</h2>
+                <p class="section-subtitle">A glimpse of the delicious treats we create every day</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="gallery-emoji">🍞</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Artisan Breads</h3>
+                        <p>Fresh from our stone oven</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="gallery-emoji">🥐</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>French Pastries</h3>
+                        <p>Buttery and flaky</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="gallery-emoji">🎂</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Custom Cakes</h3>
+                        <p>Made for special occasions</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="gallery-emoji">🍪</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Homemade Cookies</h3>
+                        <p>Chewy and delicious</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="gallery-emoji">🥧</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Fruit Pies</h3>
+                        <p>Seasonal and fresh</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="gallery-emoji">🧁</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Cupcakes</h3>
+                        <p>Fun and festive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Us Today</h2>
+                <p class="section-subtitle">Come experience the warmth of our bakery</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>123 Baker Street<br>Portland, OR 97201</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 6:00 AM - 6:00 PM<br>Sat-Sun: 7:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>(555) 123-BAKE</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>hello@sweetdelights.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Custom Order Inquiry</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your custom order..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-birthday-cake"></i>
+                    <div class="brand-text">
+                        <span class="brand-main">Sweet Delights</span>
+                        <span class="brand-sub">Bakery</span>
+                    </div>
+                    <p>Bringing joy through freshly baked goods since 1995</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Menu</h4>
+                        <a href="#menu">Breads</a>
+                        <a href="#menu">Pastries</a>
+                        <a href="#menu">Cakes</a>
+                        <a href="#menu">Specialty</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <a href="#about">Our Story</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Reviews</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Delights Bakery. All rights reserved. Made with ❤️ in Portland, OR</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bakery.js"></script>
+</body>
+</html>
