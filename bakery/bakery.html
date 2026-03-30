@@ -23,6 +23,7 @@
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#menu" class="nav-link">Menu</a>
+                <a href="#order" class="nav-link">Order Online</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#gallery" class="nav-link">Gallery</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -331,6 +332,120 @@
                         <h3>Cupcakes</h3>
                         <p>Fun and festive</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Ordering Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Order Online</h2>
+                <p class="section-subtitle">Fresh baked goods delivered to your door</p>
+            </div>
+            <div class="order-content">
+                <div class="order-categories">
+                    <div class="category-card">
+                        <div class="category-icon">🍞</div>
+                        <h3>Bread & Pastries</h3>
+                        <p>Fresh artisan breads and flaky pastries</p>
+                        <div class="category-items">
+                            <div class="item">
+                                <span>Sourdough Loaf</span>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <div class="item">
+                                <span>Croissant</span>
+                                <span class="price">$3.50</span>
+                            </div>
+                            <div class="item">
+                                <span>Cinnamon Roll</span>
+                                <span class="price">$4.25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🍪</div>
+                        <h3>Cookies & Treats</h3>
+                        <p>Chewy, crispy, and everything in between</p>
+                        <div class="category-items">
+                            <div class="item">
+                                <span>Chocolate Chip</span>
+                                <span class="price">$2.50</span>
+                            </div>
+                            <div class="item">
+                                <span>Oatmeal Raisin</span>
+                                <span class="price">$2.75</span>
+                            </div>
+                            <div class="item">
+                                <span>Macaron (6-pack)</span>
+                                <span class="price">$12.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🧁</div>
+                        <h3>Cakes & Cupcakes</h3>
+                        <p>Perfect for celebrations and everyday treats</p>
+                        <div class="category-items">
+                            <div class="item">
+                                <span>Cupcake</span>
+                                <span class="price">$3.99</span>
+                            </div>
+                            <div class="item">
+                                <span>Cheesecake Slice</span>
+                                <span class="price">$6.50</span>
+                            </div>
+                            <div class="item">
+                                <span>Mini Cake</span>
+                                <span class="price">$15.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-form">
+                    <h3>Place Your Order</h3>
+                    <form id="orderForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="customerName" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="customerEmail" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="deliveryAddress" placeholder="Delivery Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="orderType" required>
+                                <option value="">Select Order Type</option>
+                                <option value="pickup">Pickup</option>
+                                <option value="delivery">Delivery</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="orderItems" placeholder="List your items and quantities..." rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="specialInstructions" placeholder="Special instructions or dietary requirements..." rows="3"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="datetime-local" id="pickupTime" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="promoCode" placeholder="Promo Code (optional)">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Place Order</button>
+                    </form>
                 </div>
             </div>
         </div>

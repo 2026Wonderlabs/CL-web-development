@@ -210,6 +210,47 @@ img, video, iframe, object, embed {
   list-style: disc inside;
   padding-left: 0;
 }
+/* About Page */
+.about-section {
+  padding: 80px 60px;
+  background: #111;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(59,130,246,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(59,130,246,0.5);
+}
+
+.about-card h3 {
+  margin-bottom: 20px;
+  color: #3b82f6;
+  font-size: 24px;
+}
+
+.about-card p {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
 /* Global max-width for all pages */
 .container,
 .contact-container,

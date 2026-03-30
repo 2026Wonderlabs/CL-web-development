@@ -548,6 +548,23 @@ img, video, iframe, object, embed {
         padding: 3rem 0;
     }
 
+    .order-section {
+        padding: 3rem 0;
+    }
+
+    .order-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .order-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
     .container {
         padding: 0 1rem;
     }
@@ -972,6 +989,119 @@ img, video, iframe, object, embed {
 .gallery-overlay p {
     opacity: 0.9;
     font-size: 0.9rem;
+}
+
+/* Order Section */
+.order-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.order-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.order-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background: var(--cream);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid rgba(139, 69, 19, 0.1);
+    transition: var(--transition);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-color);
+}
+
+.category-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.category-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.category-items {
+    text-align: left;
+}
+
+.category-items .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.category-items .item:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.order-form {
+    background: var(--cream);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 2px solid rgba(139, 69, 19, 0.1);
+}
+
+.order-form h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-size: 1.8rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid rgba(139, 69, 19, 0.2);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
 }
 
 /* Contact Section */

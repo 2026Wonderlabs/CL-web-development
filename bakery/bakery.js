@@ -221,6 +221,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', debouncedScroll);
 
+    // Order Form Functionality
+    const orderForm = document.getElementById('orderForm');
+    if (orderForm) {
+        orderForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = {
+                name: document.getElementById('customerName').value,
+                email: document.getElementById('customerEmail').value,
+                phone: document.getElementById('customerPhone').value,
+                address: document.getElementById('deliveryAddress').value,
+                orderType: document.getElementById('orderType').value,
+                items: document.getElementById('orderItems').value,
+                instructions: document.getElementById('specialInstructions').value,
+                pickupTime: document.getElementById('pickupTime').value,
+                promoCode: document.getElementById('promoCode').value
+            };
+
+            // Basic validation
+            if (!formData.name || !formData.email || !formData.phone || !formData.orderType || !formData.items || !formData.pickupTime) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Phone validation (basic)
+            const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+            if (!phoneRegex.test(formData.phone.replace(/[\s\-\(\)]/g, ''))) {
+                alert('Please enter a valid phone number.');
+                return;
+            }
+
+            // Success message (in a real site, this would send to server)
+            alert(`Thank you for your order, ${formData.name}! We'll contact you at ${formData.email} to confirm your order details. Expected ${formData.orderType} time: ${new Date(formData.pickupTime).toLocaleString()}`);
+            this.reset();
+        });
+    }
+
+    // Order type change handler
+    const orderTypeSelect = document.getElementById('orderType');
+    const deliveryAddressField = document.getElementById('deliveryAddress');
+
+    if (orderTypeSelect && deliveryAddressField) {
+        orderTypeSelect.addEventListener('change', function() {
+            const addressGroup = deliveryAddressField.closest('.form-group');
+            if (this.value === 'delivery') {
+                addressGroup.style.display = 'block';
+                deliveryAddressField.required = true;
+            } else {
+                addressGroup.style.display = 'none';
+                deliveryAddressField.required = false;
+            }
+        });
+    }
+
     // Initialize all interactive features
     console.log('Sweet Delights Bakery - Interactive features loaded successfully!');
 });
