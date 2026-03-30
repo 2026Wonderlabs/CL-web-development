@@ -20,7 +20,8 @@ function initSmoothScrolling() {
             const targetSection = document.querySelector(targetId);
 
             if (targetSection) {
-                const headerHeight = document.querySelector('.site-header').offsetHeight;
+                const navbar = document.querySelector('.navbar');
+                const headerHeight = (navbar) ? navbar.offsetHeight : 80;
                 const targetPosition = targetSection.offsetTop - headerHeight - 20;
 
                 window.scrollTo({

@@ -35,7 +35,25 @@
 
   <!-- Contact Form -->
   <section class="contact-section">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBinH65TXs72Czk4sROs9Wzx4VGG4ZbIUCD2IgKGuQ8O_jEw/viewform?embedded=true" width="640" height="688" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="contact-container">
+      <h2>Get In Touch</h2>
+      <form id="contact-form" action="https://formspree.io/f/xyzqwert" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+        
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="form-note">Or reach out directly via email or phone in the section above.</p>
+    </div>
   </section>
 
 </body>
