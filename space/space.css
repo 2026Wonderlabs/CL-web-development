@@ -55,19 +55,23 @@ img, video, iframe, object, embed {
 .back-to-site a {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.45rem 0.9rem;
-    background: rgba(255,255,255,0.92);
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    background: rgba(127, 0, 255, 0.8);
     border-radius: 999px;
-    color: #020713;
+    color: #ffffff;
     font-weight: 700;
-    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 0.8rem;
+    border: 1px solid rgba(192, 132, 252, 0.7);
     text-decoration: none;
+    box-shadow: none;
+    transition: transform 0.15s ease, background 0.15s ease;
 }
 
 .back-to-site a:hover {
-    background: #fff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    background: #a855f7;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(127, 0, 255, 0.6);
 }
 
 /* Navigation */
